@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title> {{page_title}}</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.20/dist/jquery.flip.min.js"></script>
+	<script>
+    $(function(){
+    	$(".flip-horizontal").flip({
+  			trigger: 'hover'
+		});
+    });
+  	</script>
+	
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+  <h1> {{page_title}} </h1>
+  <div class="aqua pull-left">
+  	<div id="flip-this" class="flip-horizontal"> 
+      <div class="front"> 
+      	<h3>{{quadrant_one_front}}</h3>
+      </div> 
+      <div class="back">
+      	<h3>{{quadrant_one_back}} </h3>
+      </div> 
+  	</div>    	
+  </div>
+
+  <div class="blue pull-right" >
+  	<div id="flip-this" class="flip-horizontal"> 
+      <div class="front"> 
+        <h3>{{quadrant_two_front}}</h3>
+      </div> 
+      <div class="back">
+        <h3>{{quadrant_two_back}}</h3>
+      </div> 
+  	</div>
+  </div>
+
+  <div class="green pull-left bottom">
+    <div id="flip-this" class="flip-horizontal"> 
+  	  <div class="front"> 
+  	    <h3>{{quadrant_three_front}}</h3>
+  	  </div> 
+  	  <div class="back">
+  	    <h3>{{quadrant_three_back}}</h3>
+	  </div> 
+  	</div> 
+  </div>
+  
+  <div class="tan pull-right bottom">
+  	<div id="flip-this" class="flip-horizontal"> 
+      <div class="front"> 
+        <h3>{{quadrant_four_front}}</h3>
+      </div> 
+      <div class="back">
+        <h3>{{quadrant_four_back}}</h3>
+      </div> 
+  	</div>
+  </div>
+	
+  </body>
+</html>

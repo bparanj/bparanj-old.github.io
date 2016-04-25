@@ -1,0 +1,5 @@
+Install mustache gem.
+To generate the HTML file
+ruby matrix.rb > flipper.html
+
+Note : flipper.html and style.css must be in the same directory
